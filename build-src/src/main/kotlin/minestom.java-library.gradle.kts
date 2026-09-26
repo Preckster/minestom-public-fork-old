@@ -6,7 +6,8 @@ plugins {
 val javaVersion = System.getenv("JAVA_VERSION") ?: "25"
 
 group = "net.minestom"
-version = System.getenv("MINESTOM_VERSION") ?: "dev"
+// Shatterveil fork: default to the fork version (upstream release + patch level) instead of "dev".
+version = System.getenv("MINESTOM_VERSION") ?: "2026.09.12-26.2-sv.0"
 
 configurations.all {
     // We only use Jetbrains Annotations
